@@ -11,6 +11,7 @@ const {
 const Router = express.Router();
 
 Router.route("/").get(getNews).post(postNews);
+// Router.get("/signup",getNews)
 
 Router.route("/login").post(postOne);
 

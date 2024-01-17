@@ -41,7 +41,8 @@ const postOne = expressHandler(async (req, res) => {
   if (!news) {
     res.status(400).json({ "not found": "user not found" });
   }
-  res.status(200).json(news);
+  res.status(200).json(news)
+  ;
 });
 
 const updateNews = expressHandler(async (req, res) => {
